@@ -1,0 +1,16 @@
+#!/bin/sh
+
+unset XCURSOR_THEME
+export XCURSOR_THEME="Default"
+# xsetroot -solid "#000000"
+
+xset r rate 200 50
+xset s off
+xset -dpms
+xset s noblank
+
+xrandr --output HDMI-A-0 --mode 1024x768 --pos 1280x0 --rate 85 --rotate normal --output HDMI-A-1 --mode 1280x1024 --pos 0x0 --rotate normal --rate 75
+
+sxbar &
+nt -r &
+# rs &

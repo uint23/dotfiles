@@ -1,0 +1,131 @@
+#!/bin/sh
+# Colour Themes:
+# focused_border_colour    : #000000
+focused_border_colour    : #717394
+unfocused_border_colour  : #444444
+swap_border_colour       : #eeeeee
+
+# focused_border_colour    : #ffffff
+# unfocused_border_colour  : #444444
+# swap_border_colour       : #eeeeee
+
+#
+# General Options:
+# gaps                    : 20
+border_width            : 2
+gaps                    : 0
+# border_width            : 1
+master_width            : 60
+resize_master_amount    : 1
+resize_stack_amount     : 20
+move_window_amount      : 50
+resize_window_amount    : 50
+snap_distance           : 5
+motion_throttle         : 144
+should_float            : "Thunar", "filezilla", "sxiv", "pcmanfm", "xarchiver", "spotify", "virt-manager", "qemu", "qemu-system-x86_64", "Anki"
+new_win_focus           : true
+warp_cursor             : true
+floating_on_top         : true
+new_win_master          : false
+exec                    : "autostart"
+can_swallow             : "Alacritty"
+can_be_swallowed        : "sxiv", "ghex", "feh"
+start_fullscreen        : "mpv"
+
+# Keybinds:
+mod_key : super
+
+# Application Launchers:
+bind : mod + Return : "alacritty"
+bind : mod + b : "firefox-esr"
+
+bind : mod + p : "dmenu_custom"
+
+bind : mod + shift + s : "bash -c 'mkdir -p ~/Pictures/screenshots && maim -s -u | tee ~/Pictures/screenshots/$(date +%F_%H-%M).png | xclip -selection clipboard -t image/png'"
+
+bind : mod + f : "thunar"
+bind : XF86AudioRaiseVolume : "amixer set Master 1%+"
+bind : XF86AudioLowerVolume : "amixer set Master 1%-"
+bind : XF86AudioMute : "playerctl play-pause"
+
+#test rofi
+bind : mod + shift + p : "rofi -matching prefix -modi drun -show drun -font 'Linux Libertine Mono O 12' -show-icons"
+
+# Window Management:
+call : mod + shift + q : close_window
+call : mod + shift + e : quit
+call : mod + c : centre_window
+call : mod + m : toggle_monocle
+
+# Focus Movement:
+call : mod + k : focus_next
+call : mod + j : focus_prev
+
+# Monitor Focus:
+call : mod + i : focus_prev_mon
+call : mod + o : focus_next_mon
+
+# Move Window Between Monitors:
+call : mod + shift + i : move_prev_mon
+call : mod + shift + o : move_prev_mon
+
+# Master/Stack Movement
+call : mod + ctrl + i : master_next
+call : mod + ctrl + o : master_prev
+
+# Master Area Resize
+call : mod + l : master_increase
+call : mod + h : master_decrease
+call : mod + shift + n : stack_increase
+call : mod + shift + m : stack_decrease
+
+# Keyboard Window Management
+call : mod + shift + k : move_win_up
+call : mod + shift + j : move_win_down
+call : mod + shift + h : move_win_left
+call : mod + shift + l : move_win_right
+
+call : ctrl + mod + shift + k : resize_win_up
+call : ctrl + mod + shift + j : resize_win_down
+call : ctrl + mod + shift + h : resize_win_left
+call : ctrl + mod + shift + l : resize_win_right
+
+# Gaps 
+call : mod + equal : increase_gaps
+call : mod + minus : decrease_gaps
+
+# Floating/Fullscreen
+call : mod + space : toggle_floating
+call : mod + shift + space : global_floating
+call : mod + shift + f : fullscreen
+
+# Reload Config
+call : mod + r : reload_config
+
+# Scratchpad Management:
+scratchpad : mod + alt + t : create 1
+scratchpad : mod + t : toggle 1
+scratchpad : mod + shift + t : remove 1
+
+# Workspaces (1-9)
+
+call : mod + Tab             : switch_previous_workspace
+
+workspace : mod + 1          : move 1
+workspace : mod + shift + 1  : swap 1
+workspace : mod + 2          : move 2
+workspace : mod + shift + 2  : swap 2
+workspace : mod + 3          : move 3
+workspace : mod + shift + 3  : swap 3
+workspace : mod + 4          : move 4
+workspace : mod + shift + 4  : swap 4
+workspace : mod + 5          : move 5
+workspace : mod + shift + 5  : swap 5
+workspace : mod + 6          : move 6
+workspace : mod + shift + 6  : swap 6
+workspace : mod + 7          : move 7
+workspace : mod + shift + 7  : swap 7
+workspace : mod + 8          : move 8
+workspace : mod + shift + 8  : swap 8
+workspace : mod + 9          : move 9
+workspace : mod + shift + 9  : swap 9

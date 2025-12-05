@@ -1,0 +1,58 @@
+#!/bin/sh
+
+bar_position        : top
+height              : 24
+# vertical_padding    : 0
+# horizontal_padding  : 20
+vertical_padding    : 0
+horizontal_padding  : 0
+text_padding        : 0
+border              : false
+border_width        : 1
+background_colour   : #171717
+foreground_colour   : #fffde0
+border_colour       : #717394
+font                : Linux Libertine
+font_size           : 14
+
+# modules
+module.0.name       : clock
+module.0.cmd        : echo -n "t: " && date '+%H : %M : %S'
+module.0.enabled    : true
+module.0.interval   : 1
+
+module.1.name       : date
+module.1.cmd        : echo -n "d: " && date '+%Y-%m-%d'
+module.1.enabled    : true
+module.1.interval   : 60
+
+module.2.name       : volume
+module.2.cmd        : vol=$(amixer get Master | awk -F'[][]' 'END{print $2}'); echo -n "v: $vol"
+module.2.enabled    : true
+module.2.interval   : 1
+
+module.3.name       : cpu
+module.3.cmd        : top -bn1 | grep "Cpu(s)" | awk '{print "cpu: " 100-$8 "%"}'
+module.3.enabled    : true
+module.3.interval   : 3
+
+# special workspace configuration
+# workspaces.labels              : @ ? ; % & $ ! ~ *
+# workspaces.active_background   : #717394
+# workspaces.active_foreground   : #fffde0
+# workspaces.inactive_background : #fffde0
+# workspaces.inactive_foreground : #717394
+# workspaces.padding_left        : 10
+# workspaces.padding_right       : 10
+# workspaces.spacing             : 0
+# workspaces.position            : left
+
+workspaces.labels              : @ ? ; % & $ ! ~ *
+workspaces.active_background   : #717394
+workspaces.active_foreground   : #fffde0
+workspaces.inactive_background : #171717
+workspaces.inactive_foreground : #fffde0
+workspaces.padding_left        : 10
+workspaces.padding_right       : 10
+workspaces.spacing             : 0
+workspaces.position            : left

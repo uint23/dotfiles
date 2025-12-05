@@ -1,0 +1,166 @@
+[window]
+opacity = 1
+padding.x = 0
+padding.y = 0
+
+# [font]
+# normal.family = "Terminess Nerd Font Mono"
+# bold.family = "Terminess Nerd Font Mono"
+# italic.family = "Terminess Nerd Font Mono"
+# bold_italic.family = "Terminess Nerd Font Mono"
+# size = 7.0
+
+# [font]
+# normal.family = "Bm437 IBM VGA 8x16"
+# bold.family = "Bm437 IBM VGA 8x16"
+# italic.family = "Bm437 IBM VGA 8x16"
+# bold_italic.family = "Bm437 IBM VGA 8x16"
+# size = 16
+
+# [font]
+# normal.family = "Tamzen"
+# bold.family = "Tamzen"
+# italic.family = "Tamzen"
+# bold_italic.family = "Tamzen"
+# size = 10
+
+[font]
+size = 13
+[font.normal]
+family = "Linux Libertine Mono O"
+[font.bold]
+family = "Linux Libertine Mono O"
+style = "Regular"
+[font.italic]
+family = "Linux Libertine Mono O"
+[font.bold_italic]
+family = "Linux Libertine Mono O"
+[font.offset]
+x = -1
+y = 0
+
+# [font]
+# size = 13
+# [font.normal]
+# family = "Linux Libertine Mono "
+# style = "Regular"
+# [font.bold]
+# family = "Linux Libertine Mono "
+# style = "Regular"
+# [font.italic]
+# family = "Linux Libertine Mono "
+# style = "Regular"
+# [font.bold_italic]
+# # family = "Linux Libertine Mono O"
+# style = "Regular"
+# [font.offset]
+# x = -1
+# y = 0
+
+# [font]
+# size = 12
+# [font.normal]
+# family = "iso14"
+# style = "Regular"
+# [font.bold]
+# family = "iso14"
+# style = "Regular"
+# [font.italic]
+# family = "iso14"
+# style = "Regular"
+# [font.bold_italic]
+# family = "iso14"
+# style = "Regular"
+# [font.offset]
+# x = -3
+# y = 0
+
+# [font]
+# size = 9.9
+# [font.normal]
+# family = "GoMono Nerd Font Mono"
+# style = "Regular"  # optional default
+# [font.bold]
+# family = "GoMono Nerd Font Mono"
+# style = "Regular"  # optional default
+# [font.italic]
+# family = "GoMono Nerd Font Mono"
+# style = "Regular"  # optional default
+# [font.bold_italic]
+# family = "GoMono Nerd Font Mono"
+# style = "Mono"  # optional default
+# [font.offset]
+# x = 0
+# y = 0
+
+# [colors.primary]
+# background = "#000000"
+# foreground = "#e4e4e4"
+
+# [colors.normal]
+# black   = "#999999"
+# red     = "#d70000"
+# green   = "#87d700"
+# yellow  = "#d7af00"
+# blue    = "#87d7ff"
+# magenta = "#af5faf"
+# cyan    = "#5fd7ff"
+# white   = "#ffffff"
+
+# [colors.bright]
+# black   = "#999999"
+# red     = "#d70000"
+# green   = "#87d700"
+# yellow  = "#d7af00"
+# blue    = "#87d7ff"
+# magenta = "#af5faf"
+# cyan    = "#5fd7ff"
+# white   = "#ffffff"
+
+# [colors.primary]
+# background = "#fffde0"
+# foreground = "#000000"
+
+# [colors.normal]
+# black   = "#000000"
+# red     = "#d70000"
+# green   = "#87d700"
+# yellow  = "#d7af00"
+# blue    = "#005faf"
+# magenta = "#af5faf"
+# cyan    = "#0087af"
+# white   = "#e4e4e4"
+
+# [colors.bright]
+# black   = "#333333"
+# red     = "#ff0000"
+# green   = "#afff00"
+# yellow  = "#ffd700"
+# blue    = "#87d7ff"
+# magenta = "#ff87ff"
+# cyan    = "#5fd7ff"
+# white   = "#ffffff"
+
+[colors.primary]
+background = "#1c1c1c"
+foreground = "#ffffff"
+
+[colors.normal]
+black   = "#1c1c1c"
+red     = "#d70000"
+green   = "#87d700"
+yellow  = "#d7af00"
+blue    = "#005faf"
+magenta = "#af5faf"
+cyan    = "#0087af"
+white   = "#c6c6c6"
+
+[colors.bright]
+black   = "#4e4e4e"
+red     = "#ff0000"
+green   = "#afff00"
+yellow  = "#ffd700"
+blue    = "#87d7ff"
+magenta = "#ff87ff"
+cyan    = "#5fd7ff"
+white   = "#ffffff"
